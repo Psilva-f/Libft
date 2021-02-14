@@ -11,7 +11,7 @@
 # **************************************************************************** #
 
 # inclui  " libft.h "
-
+//Para escrever um numero em um arquivo
 static void	ft_filter(int n, int fd)
 {
 	if (n == INT_MIN)

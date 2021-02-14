@@ -11,7 +11,7 @@
 # **************************************************************************** #
 
 # inclui  " libft.h "
-
+//Para escreve em um artigo uma strig
 void	ft_putstr_fd(char *s, int fd)
 {
 	if (fd < 0 || !s)

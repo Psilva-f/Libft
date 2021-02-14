@@ -11,7 +11,7 @@
 # **************************************************************************** #
 
 # inclui  " libft.h "
-
+//Para escrever um caracter em um arquivo
 void	ft_putchar_fd(unsigned char c, int fd)
 {
 	if (fd < 0)

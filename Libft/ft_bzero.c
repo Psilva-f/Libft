@@ -12,9 +12,7 @@
 
 # inclui  " libft.h "
 /*int bzero ( void * s, size_t n);
-
 Uma função bzero () diz bytes zero n vezes pela string s .
-
 Se n for 0 , bzero () nao faz nada.*/
 void	*ft_bzero(void *s, size_t n)
 {

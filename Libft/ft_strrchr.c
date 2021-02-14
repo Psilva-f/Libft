@@ -25,17 +25,17 @@ Ela retorna a posição do caractere na string
 
 ou NULL se o caractere nao para encontrado."
 {
-	char	*last_pos;
+	char	*last_ps;
 
-	last_pos = (0);
+	last_ps = (0);
 	while (*s)
 	{
 		if (*s == c)
-			last_pos = (char*)s;
+			last_ps = (char*)s;
 		++s;
 	}
-	if (last_pos)
-		return (last_pos);
+	if (last_ps)
+		return (last_ps);
 	if (c == '\0')
 		return ((char*)s);
 	return (0);

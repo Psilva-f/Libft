@@ -24,27 +24,27 @@ VALORES DE RETORNO
      em	 grande , NULL é retornado; caso contrário, um ponteiro para o primeiro caractere de
      a primeira ocorrência de pouco é retornada.*/
 {
-	size_t	pos;
+	size_t	ps;
 	size_t	i;
 
-	pos = 0;
+	ps = 0;
 	if (*needle == '\0')
 		return ((char*)haystack);
-	while (haystack[pos] != '\0' && pos < len)
+	while (haystack[pos] != '\0' && ps < len)
 	{
-		if (haystack[pos] == needle[0])
+		if (haystack[ps] == needle[0])
 		{
 			i = 1;
-			while (needle[i] != '\0' && haystack[pos + i] == needle[i]
-					&& (pos + i) < len)
+			while (needle[i] != '\0' && haystack[ps + i] == needle[i]
+					&& (ps + i) < len)
 				i++;
 			if (needle[i] == '\0')
 			{
-				haystack = &haystack[pos];
+				haystack = &haystack[ps];
 				return ((char*)haystack);
 			}
 		}
-		pos++;
+		ps++;
 	}
 	return (0);
 }

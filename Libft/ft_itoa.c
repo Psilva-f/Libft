@@ -11,7 +11,7 @@
 # **************************************************************************** #
 
 # inclui  " libft.h "
-
+//A função itoa () constrói uma representação de string de um inteiro.
 static  unsigned  int 	get_nb_digit ( long n_l, int sign)
 {
 	unsigned  int 	digit;
@@ -57,7 +57,7 @@ char 				* ft_itoa ( int n)
 		n_l = ( longo ) n * - 1 ;
 		sinal = - 1 ;
 	}
-	outro
+	else
 		n_l = n;
 	nb_digit = get_nb_digit (n_l, sinal);
 	if (! (outstr = malloc ( sizeof ( char ) * nb_digit + 1 )))

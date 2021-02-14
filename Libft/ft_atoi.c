@@ -12,34 +12,21 @@
 
 # inclui  " libft.h "
 /*int atoi ( const char * str);
-
 atoi () converte um string str para um int
-
 uma função remove do inicio da string determinadas vezes, conforme o seguinte:
-
-  
-
               '\t' horizontal tab
               '\n' newline
               '\r' cariagge return
               '\v' vertical tab
               '\f' formfeed page break
               ' '  space
-  
 verifica uma vez se o sinal é positivo ou negativo
-
 verifica se os caracteres são numerais
-
 Exemplo 1:
-
 atoi ( "--- + 123d1" );
 => 0
-
-Exemplo 2:
-
-atoi ( "-123" );
-=> -123
-*/
+Exemplo 2:atoi ( "-123" );
+=> -123*/
 
 int 		ft_atoi ( const  char * str)
 {
